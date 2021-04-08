@@ -1,0 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookXpath {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Swapn\\Documents\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://facebook.com");//open URL of the browser
+		
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("abc4d");
+	}
+
+}
